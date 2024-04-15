@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تودولیست √</title>
+    <link rel="stylesheet" href="assets/stylesheets/font-style.css" />
+    <link rel="stylesheet" href="assets/stylesheets/fontawesome.css" />
+    <link rel="stylesheet" href="assets/stylesheets/brands.css" />
+    <link rel="stylesheet" href="assets/stylesheets/regular.css" />
+    <link rel="stylesheet" href="assets/stylesheets/solid.css" />
+    <link rel="stylesheet" href="assets/stylesheets/general_style.css" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading-title row justify-center align-center pb-4">
+        <h1>تودولیست</h1>
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="task-input row justify-center pb-4 pt-3">
+        <div class="col-6">
+          <form class="row space-between relative">
+            <input class="fff" type="text" placeholder="تسک جدیدی اضافه کنید ...">
+            <button class="absolute" onclick="addTask()">
+              <i class="fa-solid fa-circle-plus"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="task-list row justify-center">
+        <h5 class="text-align-center pb-3">لیست تسک ها :</h6>
+        <ul class="col-4 row f-dir-col">
+          <li class="">
+            <span>تسک اول</span>
+            <div class="buttons">
+              <button class="fa-solid fa-circle-minus"></button>
+              <button class="fa-regular fa-circle-check"></button>
+            </div>
+          </li>
+          <li class="done-task">
+            <span>تسک سوم</span>
+            <div>
+              <button class="fa-solid fa-circle-minus"></button>
+              <button class="fa-solid fa-rotate-left"></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
