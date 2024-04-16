@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/stylesheets/solid.css" />
     <link rel="stylesheet" href="assets/stylesheets/general_style.css" />
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <script src="assets/js/script.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -20,12 +21,12 @@
       </div>
       <div class="task-input row justify-center pb-4 pt-3">
         <div class="col-6">
-          <form class="row space-between relative">
+          <div class="row space-between relative">
             <input class="fff" type="text" placeholder="تسک جدیدی اضافه کنید ...">
             <button class="absolute" onclick="addTask()">
               <i class="fa-solid fa-circle-plus"></i>
             </button>
-          </form>
+          </div>
         </div>
       </div>
       <div class="task-list row justify-center">
@@ -34,15 +35,15 @@
           <li class="">
             <span>تسک اول</span>
             <div class="buttons">
-              <button class="fa-solid fa-circle-minus"></button>
-              <button class="fa-regular fa-circle-check"></button>
+              <button class="fa-solid fa-circle-minus" onclick="remTask()"></button>
+              <button class="fa-regular fa-circle-check" onclick="doRedo()"></button>
             </div>
           </li>
           <li class="done-task">
             <span>تسک سوم</span>
             <div>
-              <button class="fa-solid fa-circle-minus"></button>
-              <button class="fa-solid fa-rotate-left"></button>
+              <button class="fa-solid fa-circle-minus" onclick="remTask()"></button>
+              <button class="fa-solid fa-rotate-left" onclick="doRedo()"></button>
             </div>
           </li>
         </ul>
