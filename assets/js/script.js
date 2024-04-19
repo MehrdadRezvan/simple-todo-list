@@ -1,8 +1,8 @@
 document.querySelector(".task-list").style.display = "none"
-document.querySelector(".task-input input").focus()
+var input = document.querySelector(".task-input input")
+input.focus()
 function addTask() {
   var taskListUL = document.querySelector(".task-list ul")
-  var input = document.querySelector(".task-input input")
   var inputValue = input.value.trim()
   if (inputValue.length==0) {
     alert("شرح تسک را وارد کنید")
@@ -36,6 +36,9 @@ function addTask() {
     input.focus()
   }
 }
+input.addEventListener("keydown",function(e) {
+  if (e.key === "Enter"){addTask()}
+})
 function remTask(e) {
   var ul = e.target.parentElement.parentElement.parentElement.childNodes.length
   if (ul > 1 ) {
